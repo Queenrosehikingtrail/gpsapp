@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Setup Guide - Queen Rose Hiking App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #2E7D32;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #666;
+            font-size: 18px;
+        }
+        .step {
+            background: #f8f9fa;
+            border-left: 4px solid #4CAF50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .step h3 {
+            color: #2E7D32;
+            margin-top: 0;
+        }
+        .step-number {
+            background: #4CAF50;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .warning h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .success h4 {
+            color: #155724;
+            margin-top: 0;
+        }
+        .device-specific {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .device-specific h4 {
+            color: #0d47a1;
+            margin-top: 0;
+        }
+        .checklist {
+            background: #f1f8e9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .checklist h4 {
+            color: #33691e;
+            margin-top: 0;
+        }
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .checklist li:before {
+            content: "☐ ";
+            font-size: 18px;
+            color: #4CAF50;
+        }
+        .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        .btn-secondary {
+            background: #6c757d;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏔️ Queen Rose Hiking App</h1>
+            <p>Android Installation & Setup Guide</p>
+        </div>
+
+        <div class="warning">
+            <h4>⚠️ Important: Why Apps Sometimes Disappear</h4>
+            <p>Android automatically manages apps to save battery and storage. PWAs (web apps) like Queen Rose Hiking can be removed if not properly installed or configured. This guide ensures your app stays installed permanently.</p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">1</span>Proper Installation Method</h3>
+            <p><strong>Use Chrome Browser Only</strong> (not Samsung Internet, Firefox, or other browsers)</p>
+            <ol>
+                <li>Open <strong>Chrome browser</strong> on your Android device</li>
+                <li>Navigate to your Queen Rose Hiking app URL</li>
+                <li>Look for the <strong>"Add to Home Screen"</strong> popup at the bottom</li>
+                <li>If no popup appears, tap Chrome menu (⋮) → <strong>"Add to Home Screen"</strong></li>
+                <li>Tap <strong>"Add"</strong> when prompted</li>
+                <li>The app should now appear in your app drawer (not just home screen)</li>
+            </ol>
+        </div>
+
+        <div class="success">
+            <h4>✅ Verify Proper Installation</h4>
+            <p>After installation, check:</p>
+            <ul>
+                <li>App appears in <strong>Android app drawer</strong> (swipe up from home screen)</li>
+                <li>App opens in <strong>full screen</strong> (no browser address bar)</li>
+                <li>App appears in <strong>Settings → Apps</strong> list</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">2</span>Configure Chrome Settings</h3>
+            <p><strong>Prevent Android from removing the app</strong></p>
+            <ol>
+                <li>Go to <strong>Settings → Apps → Chrome</strong></li>
+                <li>Tap <strong>"Battery"</strong> → Select <strong>"Don't optimize"</strong></li>
+                <li>Go to <strong>Settings → Battery → Battery Optimization</strong></li>
+                <li>Find <strong>"Chrome"</strong> → Set to <strong>"Don't optimize"</strong></li>
+                <li>Ensure Chrome has sufficient storage space</li>
+            </ol>
+        </div>
+
+        <div class="device-specific">
+            <h4>📱 Device-Specific Settings</h4>
+            
+            <p><strong>Samsung Devices:</strong></p>
+            <ul>
+                <li>Settings → Device Care → Battery → App Power Management</li>
+                <li>Add Chrome to <strong>"Never sleeping apps"</strong></li>
+                <li>Disable <strong>"Put apps to sleep"</strong></li>
+            </ul>
+
+            <p><strong>Huawei/Honor Devices:</strong></p>
+            <ul>
+                <li>Settings → Battery → App Launch → Chrome</li>
+                <li>Set to <strong>"Manual"</strong> and enable all options</li>
+            </ul>
+
+            <p><strong>Xiaomi/MIUI Devices:</strong></p>
+            <ul>
+                <li>Settings → Apps → Manage Apps → Chrome</li>
+                <li>Enable <strong>"Autostart"</strong></li>
+                <li>Disable battery restrictions</li>
+            </ul>
+
+            <p><strong>OnePlus Devices:</strong></p>
+            <ul>
+                <li>Settings → Battery → Battery Optimization</li>
+                <li>Chrome → <strong>"Don't optimize"</strong></li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">3</span>Regular Usage Pattern</h3>
+            <p><strong>Keep the app active to prevent removal</strong></p>
+            <ul>
+                <li>Use the app <strong>at least once per week</strong></li>
+                <li>Always open from <strong>home screen icon</strong> (not browser)</li>
+                <li>Interact with app features (view trails, check GPS, etc.)</li>
+                <li>Use offline features to demonstrate app value to Android</li>
+            </ul>
+        </div>
+
+        <div class="checklist">
+            <h4>✅ Setup Checklist</h4>
+            <p>Complete this checklist to ensure maximum app persistence:</p>
+            <ul>
+                <li>Installed app using Chrome browser</li>
+                <li>App appears in Android app drawer</li>
+                <li>App opens in full screen mode</li>
+                <li>Chrome battery optimization disabled</li>
+                <li>Device-specific settings configured</li>
+                <li>App used at least once this week</li>
+                <li>Sufficient storage space available</li>
+            </ul>
+        </div>
+
+        <div class="warning">
+            <h4>🔧 Troubleshooting: If App Still Disappears</h4>
+            <ol>
+                <li><strong>Reinstall using Chrome</strong> (not other browsers)</li>
+                <li><strong>Check all battery optimization settings</strong></li>
+                <li><strong>Use app more frequently</strong> (daily for first week)</li>
+                <li><strong>Clear Chrome cache</strong> and reinstall</li>
+                <li><strong>Update Chrome</strong> to latest version</li>
+                <li><strong>Try Samsung Internet</strong> (Samsung devices only)</li>
+            </ol>
+        </div>
+
+        <div class="success">
+            <h4>🎯 Expected Results</h4>
+            <p>Following this guide should result in:</p>
+            <ul>
+                <li><strong>70-80% persistence</strong> with proper setup</li>
+                <li><strong>90%+ persistence</strong> with regular usage</li>
+                <li><strong>Reliable offline functionality</strong></li>
+                <li><strong>Native app-like experience</strong></li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="javascript:history.back()" class="btn btn-secondary">← Back to App</a>
+            <a href="#" onclick="window.print()" class="btn">🖨️ Print Guide</a>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px; color: #666; font-size: 14px;">
+            <p>Queen Rose Hiking Trail App - Android Setup Guide v1.0</p>
+        </div>
+    </div>
+
+    <script>
+        // Track setup guide usage
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.ready.then(registration => {
+                console.log('[Setup Guide] Viewed Android setup guide');
+            });
+        }
+    </script>
+</body>
+</html>
+
